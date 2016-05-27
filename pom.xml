@@ -51,4 +51,10 @@
       </plugin>
     </plugins>
   </build>
+
+  <modules>
+    <module>module-jdk-6</module>
+    <module>module-jdk-7</module>
+    <module>module-jdk-8</module>
+  </modules>
 </project>
