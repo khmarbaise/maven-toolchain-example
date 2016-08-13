@@ -24,6 +24,11 @@
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.6-SNAPSHOT</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
         <executions>
           <execution>
@@ -40,15 +45,15 @@
             <goals>
               <goal>toolchain</goal>
             </goals>
+            <configuration>
+              <toolchains>
+                <jdk>
+                  <version>1.7</version>
+                </jdk>
+              </toolchains>
+            </configuration>
           </execution>
         </executions>
-        <configuration>
-          <toolchains>
-            <jdk>
-              <version>1.7</version>
-            </jdk>
-          </toolchains>
-        </configuration>
       </plugin>
     </plugins>
   </build>
